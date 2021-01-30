@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ColorPicker
+</title>
+<script language="javascript">
+function changecolor(form)
+{	
+	var c= document.getElementById("paint");
+	var ctx=c.getContext("2d");
+	ctx.fillStyle=form.color.value;
+	ctx.fillRect(0,0,500,500);
+}
+</script>
+<body>
+	<form>
+  <input type="radio" name="color" value="red" onclick="changecolor(this.form)"> Female<br>
+  <input type="radio" name="color" value="blue" onclick="changecolor(this.form)"> Other  
+<br><br>
+</form>
+<canvas id="paint" width="500" height="500">
+</body>
+</html>

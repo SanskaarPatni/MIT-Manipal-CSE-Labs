@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getBoundingClientRect</title>
+	<script>
+	function getPos() {
+  		var pPos = document.getElementById("myHello");
+  		var rect = pPos.getBoundingClientRect();
+  		x = rect.left;
+  		y = rect.top;
+  		w = rect.width;
+  		h = rect.height;
+  		alert ("Left: " + x + ", Top: " + y + ", Width: " + w + ", Height: " + h);
+	}
+	</script>
+</head>
+<body>
+	<p id="myHello">Hello World</p>
+	<button onClick="getPos()">Get Position</button>
+</body>
+</html>

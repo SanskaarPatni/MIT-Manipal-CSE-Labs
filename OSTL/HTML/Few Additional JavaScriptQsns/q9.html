@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q9</title>
+</head>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+
+
+  }  
+    
+var num=document.myform.num.value;  
+
+if (num.length != 10){  
+alert("please enter proper number");
+  document.getElementById("numloc").innerHTML="Enter Numeric value only";  
+  return false;  
+}else{  
+  return true;  
+  }  
+}
+</script>  
+<body>  
+<form name="myform" method="post" action="abc.jsp" onsubmit="validateform()" >  
+Name: <input type="text" name="name"style="text-transform:uppercase" ><br/>  
+Password: <input type="password" name="password"><br/>  
+Number: <input type="text" name="num"><span id="numloc"></span><br/>  
+<input type="submit" value="register">  
+</form> 
+</body>
+</html>

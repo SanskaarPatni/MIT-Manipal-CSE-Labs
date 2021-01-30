@@ -1,0 +1,42 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\begin{document}
+	\title{My First Document}
+	\author{Sanskaar}
+	\date{\today}
+	\maketitle
+	\pagenumbering{roman}
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	\section{Introduction}
+	This is the introduction.
+	\section{Methods}
+	\subsection{Stage 1}
+	\label{sec1}
+	The first part of the methods.
+	\subsection{Stage 2}
+	The second part of the methods.
+	\section{Results}
+	\ref{sec1}
+	Here are my results.
+	\ref{Cross-refernce_key}
+	\begin{itemize}
+		\item \textit{Apple}
+		\item\textsl{Orange} 
+	\end{itemize}
+   \begin{enumerate}
+   	\item {\small \textup{ Apple}}
+  	\item \textsl{Orange}
+   \end{enumerate}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.2\textwidth]{index.jpeg}
+	\caption{This figure shows a rock.}
+	\label{Cross-refernce_key}
+\end{figure}
+
+
+
+
+\end{document}

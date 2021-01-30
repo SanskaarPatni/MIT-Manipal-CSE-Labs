@@ -1,0 +1,25 @@
+Sir VLAN Router configuration
+
+conf t
+int f0/0
+ip addr 192.168.1.1 255.255.255.0
+no shut
+exit
+
+int f0/0.2
+encapsulation dot1q 2
+ip addr 192.168.3.1 255.255.255.192
+no shut
+exit
+
+int f0/0.4
+encapsulation dot1q 4
+ip addr 192.168.3.65 255.255.255.192
+no shut
+exit
+
+int f0/0.6
+encapsulation dot1q 6
+ip addr 192.168.3.129 255.255.255.192
+no shut
+exit

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OSTL PRACTISE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+</head>
+<body>
+
+<p>All meta information goes before the body.</p>
+<b>You<sup>HEY</sup></b>
+<h1><mark>yes</mark></h1>
+<hr>
+<h6><del>yes</del>no</h6>
+<a href="https://www.google.com/">Google</a>
+<style>
+a:link,a:visited{
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+}
+</style>
+ <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a> 
+ <br>
+<script>
+	function pick(s){
+		var pic;
+		if(s==0){
+			pic="index.jpg"
+		}
+		else{
+			pic="index2.jpeg"
+		}
+		document.getElementById("MyImg").src=pic;
+	}
+</script>
+<img id="MyImg" src="index.jpg" width="200" height="180">
+<button type="button"
+onclick="pick(1)">Change Picture</button>
+<br>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+ <pre>
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+</pre> 
+ <var>E</var> = <var>mc</var><sup>2</sup>. 
+
+
+
+<button type="button" 
+onclick="document.getElementById('pemo').innerHTML = 'Hello JavaScript!'">Display Text</button>
+<p id='pemo'></p>
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr> 
+</body>
+</html>

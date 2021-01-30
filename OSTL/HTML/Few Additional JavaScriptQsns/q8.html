@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Q8</title>
+
+</head>
+<body>
+<input type="radio" id ="Red" name="color" onclick='func("red")'>Red<br>
+<input type="radio" id ="Blue" name="color" onclick=func("blue")>Blue<br>
+<input type="radio" id ="Green" name="color" onclick=func("green")>Green<br>
+<canvas id="myCanvas" width="200" height="300">Not supported</canvas>
+<script>
+function func(color)
+{
+var c=document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(10,100,150,150);
+ctx.stroke();
+ctx.fillStyle=color;
+ctx.fill();
+}
+</script>
+
+</body>
+</html>

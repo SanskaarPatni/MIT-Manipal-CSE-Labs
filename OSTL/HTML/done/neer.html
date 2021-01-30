@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1> Calculating sum and product of an array</h1>
+</head>
+<body bgcolor='cyan'>
+	<script>
+		
+		var arr=[];
+		var size=0;
+		var sum=0;
+		var product=1;
+		size=prompt('Enter size');
+		document.write(size );
+		
+
+		for(var i=0;i<size;i++)
+		{
+			arr[i]=prompt('Enter the element');
+			}
+		for(var j=0;j<size;j++)
+		{
+			
+			sum=sum+Number(arr[j]);
+			product=product*Number(arr[j]);
+		}
+        document.write("sum is"); 
+		document.write(sum); 
+		document.write("product is") 
+		document.write(product); 
+	</script>
+</body>
+</html>
+

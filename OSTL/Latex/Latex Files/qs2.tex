@@ -1,0 +1,47 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{graphicx}
+\usepackage[import]{adjustbox}
+\begin{document}
+	\title{My First Document}
+	\author{Sanskaar}
+	\date{\today}
+	\maketitle
+	\pagenumbering{roman}
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	\section{Introduction}
+	{\huge This is the introduction}
+	 \section{Methods}
+	\subsection{Stage 1}
+
+	The first part of the methods.
+	\subsection{Stage 2}
+	The second part of the methods.
+	\section{Results}
+
+	Here are my results.
+   \begin{enumerate}
+   	\item {Vegetables}
+   	\begin{enumerate}
+   		\item {Potato refer figure}
+   		\ref{Cross-refernce_key}
+   		\begin{figure}[p]
+  			\centering
+   					\includegraphics[width=0.7\textwidth]{index1.jpg}
+   			
+   			\caption{This figure shows a Potato.}
+   			\label{Cross-refernce_key}
+   		\end{figure}
+   		\item {Onion refer figure}
+   		\ref{Cross-refernce_key1}
+   		\begin{figure}[p]
+   			\includegraphics[width=0.9\textwidth]{index2.jpg}
+   			\caption{This figure shows a Onion.}
+   			\label{Cross-refernce_key1}
+   		\end{figure}
+   	
+   	\end{enumerate} 
+   \end{enumerate}
+
+\end{document}

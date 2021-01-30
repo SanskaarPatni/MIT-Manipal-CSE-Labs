@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>smiley</title>
+	<h1> I am creating a smiley</h1>
+</head>
+<body>
+	<canvas id="myCanvas" width="800" height="600" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(300, 300, 100, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle="yellow";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(250,270,15,0,2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle="black";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(350,270,15,0,2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle="black";
+ctx.fill();
+ctx.beginPath();
+        ctx.arc(300, 330, 55, degreesToRadians(0), degreesToRadians(180), false);
+        ctx.stroke();
+        ctx.fillStyle="black";
+ctx.fill();
+    
+
+    function degreesToRadians(degrees) {
+        return (degrees * Math.PI) / 180;
+    }
+
+</script> 
+
+
+</body>
+</html>

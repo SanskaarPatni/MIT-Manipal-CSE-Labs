@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	p{
+     border: 10px solid powderblue;
+     padding: 10px;
+     margin: 10px;
+	
+	}
+	</style>
+  <!-- <link rel="stylesheet" href="styles.css">-->
+  <title>OSTL PRACTISE</title>
+</head>
+<body>
+
+<a href="#first">Jump to Chapter 4</a>
+ <ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+ <dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl> 
+	<!--This is a comment-->
+<bdo id="me" dir="rtl">This line will be written from right to left</bdo>
+<button onclick="yes()">Click to change direction of text</button>
+<script>
+	function yes(){
+		document.getElementById("me").dir="ltr";
+	}
+</script>
+<p title="Just a random para">All meta information goes before the body.</p>
+<b>You<sup>HEY</sup></b>
+<h1><mark>yes</mark></h1>
+<hr>
+<h6><del>yes</del>no</h6>
+<a href="https://www.google.com/" target="_blank">Google</a>
+<style>
+a:link,a:visited{
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+}
+</style>
+ <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a> 
+ <br>
+<script>
+	function pick(s){
+		var pic;
+		if(s==0){
+			pic="index1.jpg"
+		}
+		else{
+			pic="index2.jpg"
+		}
+		document.getElementById("MyImg").src=pic;
+	}
+</script>
+<img id="MyImg" src="index3.jpg" width="200" height="180">
+<button type="button"
+onclick="pick(1)">Change Picture</button>
+<br>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML =Date()">
+Click me to display Date and Time.</button>
+<pre>
+<p id="demo"></p>
+<code class="eqn">
+x = 5;
+y = 6;
+z = x + y;
+</code>
+ <var>E</var> = <var>mc</var><sup>2</sup>. 	
+</pre>
+<i>yo</i>
+
+<p id="semo">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("semo").style.fontSize = "25px"; 
+  document.getElementById("semo").style.color = "red";
+  document.getElementById("semo").style.backgroundColor = "yellow"; 
+  document.getElementById("semo").innerHTML="Help Me";   }
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+
+
+<button type="button" 
+onclick="document.getElementById('pemo').innerHTML = 'Hello JavaScript!'">Display Text</button>
+<p id='pemo'></p>
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2 id="first">This is heading 2</h2>
+<p>This is some other text.</p>
+<hr> 
+<iframe height="300px" width="100%" src="https://www.google.com/" name="iframe_a"></iframe>
+
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<script>
+	function sec(s){
+		var pic;
+		if(s==1)
+		{
+			pic="index1.jpg";
+		}
+		else{
+			pic="index2.jpg";
+		}
+		document.getElementById("nemo").src=pic;
+	}
+
+</script>
+<img id="nemo" src="index3.jpg" width="100" height="100px">
+<button onclick="sec(1)">
+	Click!
+</button>
+
+<img src="mapme.jpg" width="200" height="200" usemap="#mapme">
+<map name="mapme">
+	<area shape="rect" coords="0,0,100,200" onclick="myfunc()">
+	<area shape="rect" coords="0,50,200,200" onclick="myfunc1()">
+
+</map>
+<script>
+	function myfunc(){
+		alert("yo clicked the doggo");
+	}
+	function myfunc1(){
+		alert('you clicked the catty');
+
+	}
+</script>
+</body>
+</html>

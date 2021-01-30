@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ColorPicker
+</title>
+<script language="javascript">
+function changecolor(form)
+{	
+	var c= document.getElementById("paint");
+	var ctx=c.getContext("2d");
+	ctx.fillStyle=form.color.value;
+	ctx.fillRect(0,0,500,500);
+}
+</script>
+<style>
+body{background-color: black;color: white; text-align: center}
+h1{font-family: Times New Roman; font-size: 100px; color: darkgreen}
+p{float: right}
+</style>
+</head>
+<body>
+<p>
+<form>
+<input type="button" name="color" style="background-color: red" value="red" onclick="changecolor(this.form)">
+</form>
+<form>
+<input type="button" name="color" style="background-color: blue" value="blue" onclick="changecolor(this.form)">
+</form>
+<form>
+<input type="button" name="color" style="background-color: yellow" value="yellow" onclick="changecolor(this.form)">
+</form>
+<form>
+<input type="button" name="color" style="background-color: green" value="green" onclick="changecolor(this.form)">
+</form>
+<form>
+<input type="button" name="color" style="background-color: purple" value="purple" onclick="changecolor(this.form)">
+</form>
+<form>
+Enter a color:<input name="color">
+<input type="button" name="change" value="Change" onclick="changecolor(this.form)">
+</form>
+</p>
+<canvas id="paint" width="500" height="500">
+<script>
+var c= document.getElementById("paint");
+	var ctx=c.getContext("2d");
+	ctx.fillStyle="white";
+	ctx.fillRect(0,0,500,500);
+</script>
+</canvas>
+</body>
+</html>

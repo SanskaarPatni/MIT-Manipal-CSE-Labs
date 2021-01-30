@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creating two rectangles</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="800" height="600" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.fillStyle="red";
+ctx.fillRect(20,20,100,150);
+ctx.stroke();
+ctx.beginPath();
+ctx.fillStyle="cyan";
+ctx.rotate(20 * Math.PI / 180);
+ctx.fillRect(50, 20, 100, 50);
+ctx.stroke();
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sort 3 numbers</title>
+	<script>
+		function findLarg(){
+			var a=prompt("Enter length");
+			var arr=[];
+			var sum=0;
+			var prod=1;
+			for(var i=0;i<a;i++){
+				arr[i]=prompt("Enter element");
+			}
+			for(var i=0;i<a;i++){
+				sum=sum+Number(arr[i]);
+				prod=prod*Number(arr[i]);
+			}
+			alert("Sum and Multiplication of the array elements gives us:"+sum+" and "+prod);
+
+	
+		}
+	</script>
+</head>
+<body>
+<button type="button" onclick="findLarg()">Start</button>
+</body>
+</html>

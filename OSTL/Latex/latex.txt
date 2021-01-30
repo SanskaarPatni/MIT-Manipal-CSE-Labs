@@ -1,0 +1,31 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{rotating}
+\begin{document}
+	\newpage
+	\pagenumbering{arabic}
+\begin{tabular}{|l|l|c|c|c|c|l|l|l|l|}
+	\hline
+	\textbf{Day}&9-9.50&9.55-&10.50-&11.05-&12.00-&1.00-&1.55-&2.45-&3.00-\\
+	&&10.50&11.05&12.00&1.00&1.50&2.45&3.00&4.00\\
+\hline
+	\textbf{MON}&&&\multirow{5}{*}{{\rotatebox[origin=r]{90}{Break}}}&&\multirow{5}{*}{{\rotatebox[origin=r]{90}{Lunch}}}&&&\multirow{5}{*}{{\rotatebox[origin=r]{90}{Break}}}&\\
+	\cline{1-3}\cline{5-5}\cline{7-8}\cline{10-10}
+	\textbf{TUE}&&&&&&&&&\\
+	\cline{1-3}\cline{5-5}\cline{7-8}\cline{10-10}
+	\textbf{WED}&&&&&&&&&\\
+	\cline{1-3}\cline{5-5}\cline{7-8}\cline{10-10}
+	\textbf{THU}&&&&&&&&&\\
+	\cline{1-3}\cline{5-5}\cline{7-8}\cline{10-10}
+
+	\textbf{FRI}&&&&&&&&&\\
+	\cline{1-3}\cline{5-5}\cline{7-8}\cline{10-10}
+	
+	\textbf{MON}&&&&&&&&&\\
+	\hline
+
+
+\end{tabular}
+\end{document}

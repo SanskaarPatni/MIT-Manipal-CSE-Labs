@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+<fieldset>
+	<legend>My First HTML form</legend>
+  
+  
+Enter user ID:<br>
+  <input type="text" name="UserID" value="Mickey">
+  <br>
+  Password:<br>
+  <input type="text" name="Password" value="Mouse">
+  <br><br>
+<h3>Radio buttons</h3>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other  
+<br><br>
+<h3>Dropdownlist</h3>
+   <select name="cars" size="2">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select> 
+<br><br>
+<h3>Preselected</h3>
+ <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <br><br>
+   <h3>TextArea</h3>
+   <textarea name="message" rows="10" cols="30">
+Brief Introduction about you. 
+</textarea> 
+
+  <input type="reset" value="Reset">
+   <input type="button" value="Click">	
+  <input type="submit" value="Submit">		
+</fieldset>
+
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+ <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form> 
+
+</body>
+</html>

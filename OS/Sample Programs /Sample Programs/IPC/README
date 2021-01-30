@@ -1,0 +1,35 @@
+This Directory contains the example programs as described 
+in Chapter 10:
+
+Section           Program
+
+10.3.4            msg_svr5/test_msgsnd.C
+
+10.3.5            msg_svr5/test_msgrcv.C
+
+10.3.6            msg_svr5/test_msgctl.C
+
+10.3.7            msg_svr5/message.h
+		  msg_svr5/server.C
+		  msg_svr5/client.C
+
+10.4.1            msg_posix/message2.h
+
+10.5.5            sem_svr5/test_sem.C
+
+10.6              sem_posix/test_semp.C
+	          sem_posix/test_semp2.C
+
+10.7.5            shm_svr5/test_shm.C
+
+10.7.6            shm_svr5/test_shm2.C
+	
+10.7.7            shm_svr5/message3.h
+
+10.8.2            mmap/test_mmap.C
+
+10.8.5            mmap/message4.h
+
+10.9              shm_posix/test_shmp.C
+
+10.9.1            shm_posix/message5.h

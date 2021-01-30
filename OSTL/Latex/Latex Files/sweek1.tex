@@ -1,0 +1,51 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\begin{document}
+	\title{My First Document}
+	\author{Sanskaar}
+	\date{\today}
+	\maketitle
+	\pagenumbering{roman}
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	\begin{tabular}{r|cl}
+	   1st & 2nd & 3rd\\
+	   \hline
+	   a & b & c\\
+	   \cline{2-3}		
+	   d & e & f\\
+	\end{tabular}
+\begin{tabular}{llc}
+		\hline%
+		\multicolumn{2}{c}{Sample}& Roughness\\
+		 & &(nm)\\
+		\hline%
+		 A & ring & 385\\
+		 \cline{2-3}
+		 & plate & 397\\
+		 \hline
+		 B & ring &376\\
+		 \cline{2-3}
+		 &plate & 390\\
+		 \hline
+	\end{tabular}
+
+\begin{tabular}{llcccc}
+	\hline
+	\multirow{2}{*}{Name} & \multirow{2}{*}{Course}&\multicolumn{3}{c}{Marks}& Total\\
+	\cmidrule{3-5}
+	& & Test1 &Test 2 &Test 3 &\\
+	\toprule%
+	\multirow{2}{*}{Alice}&C1 &10 &9& 8 &27\\
+	\cmidrule(l){2-6}
+	&C2&9&9&9&9\\
+	\midrule
+	\multirow{2}{*}{Bob}&C1&7&5&9&21\\
+	\cmidrule(l){2-6}
+	& C2 &8&8&8&8\\
+	\bottomrule
+\end{tabular}
+\end{document}

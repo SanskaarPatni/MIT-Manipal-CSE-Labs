@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sort 3 numbers</title>
+	<script>
+		function findLarg(){
+			alert("Enter three numbers:");
+			var a=prompt("Enter number");
+			var b=prompt("Enter number");
+			var c=prompt("Enter number");
+			document.write("Numbers entered are\n");
+			document.write(a,b,c);
+			if(a>b && a>c){
+				alert(a+" is the largest");
+			}
+			else if(b>c && b>a){
+				alert(b+" is the largest");
+			}
+			else{
+				alert(c+" is the largest");
+			}
+		}
+	</script>
+</head>
+<body>
+<button type="button" onclick="findLarg()">Start</button>
+</body>
+</html>

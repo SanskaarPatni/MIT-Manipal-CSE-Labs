@@ -1,0 +1,17 @@
+int fd=open('/HOME/SANSKAAR/DUMMY.txt',O_CREATE,IRUSE||IWUSR)
+
+important functions
+1.append character to char arr
+char arr[100]=""
+while(read(fd,&c,1)==1)	strncat(arr,&c,1)
+
+2. Check a substring in a string
+
+strstr(string,substring)!=NULL matlab found
+if NULL then not found
+
+3.To make the charr array empty again
+line[0] = '\0';
+
+4.Convert string to integer
+int num=atoi(argv[1])

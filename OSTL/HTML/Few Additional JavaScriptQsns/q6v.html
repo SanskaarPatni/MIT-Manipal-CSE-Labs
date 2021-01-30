@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>insert/delete</title>
+</head>
+<body>
+<script type="text/javascript">
+var array = [];
+var size = 5;
+for(var i=0; i<size; i++) {
+
+
+array[i] = Number(prompt('Enter Element ' + (i+1)));
+}
+   var x=window.prompt("Enter insert or delete");
+   if(x.localeCompare("insert")==0)
+   {
+   	var ele=Number(window.prompt("Enter the element to be inserted"));
+   	var pos=Number(window.prompt("Enter the pos at which it has to be inserted"))-1;
+   	var j=0;
+   	var i=Number(j);
+   	var s="";
+
+   	for(i=5;i>pos;i--)
+   	{
+   		array[i]=array[i-1];
+   	}
+   	array[pos]=ele;
+   	for(i=0;i<=5;i++)
+   	{
+   		s= s+" "+array[i];
+   	}
+   }
+      if(x.localeCompare("delete")==0)
+   {
+   	
+   	var pos=Number(window.prompt("Enter the pos at which number has to be deleted"))-1;
+   	var j=0;
+   	var i=Number(j);
+   	var s="";
+
+   	for(i=pos;i<4;i++)
+   	{
+   		array[i]=array[i+1];
+   	}
+ 
+   	for(i=0;i<4;i++)
+   	{
+   		s= s+" "+array[i];
+   	}
+   }
+   alert(s);
+</script>
+</body>
+</html>

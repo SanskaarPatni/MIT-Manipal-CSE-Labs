@@ -1,0 +1,90 @@
+\documentclass[17pt]{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\setbeamercovered{highly dynamic}
+\title{Presentation with beamer}
+\logo{\includegraphics[width=0.2\textheight]{index.jpeg}}
+\subtitle{Optional}
+\author[Author 1 ,Author 2 ,Author 3 ]{A\inst{1},B\inst{1},C\inst{2}}
+\institute{
+	\inst{1}MIT
+	\inst{2}VIT}
+\date{\today}
+
+\AtBeginSection[]{
+	\begin{frame}
+	\frametitle{Table Of Contents}
+	\tableofcontents[currentsection]
+\end{frame}
+}
+\begin{document}
+	\frame{\titlepage}
+	\begin{frame}
+	\frametitle{Table Of Contents}
+	\tableofcontents
+\end{frame}
+
+\section{First Section}
+\begin{frame}
+	Using itemize for pause operation
+\begin{itemize}
+	
+	\item<1-2> text visible on slide 1
+	\item<2->text visible on slide 2
+	\item<3->text visible on slide 3
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+In this slide \pause
+ the text will be partially visible\visible<2>{asd}
+And finally everything\pause  will be there
+\end{frame}
+\section{Second Section}
+\subsection{2nd Section first}
+
+\begin{frame}
+\frametitle{Sample frame title}
+	This is a \alert{text} in this frame.
+\begin{block}{Remark}
+	Sample text
+\end{block}
+\begin{alertblock}{Important Theorem}
+	Sample text in red block
+\end{alertblock}
+\begin{examples}
+	Sample text in green  block
+\end{examples}
+\begin{block}{Always  blue}
+	Sample text in green  block
+\end{block}
+\end{frame}
+\begin{frame}
+\onslide<+(1)>{Second Sentence.}
+\onslide<+(1)>{Third Sentence.}
+\onslide<+(1)>{End of overlays.}
+\end{frame}
+\begin{frame}
+	\begin{columns}
+		\begin{column}{.2\textwidth}
+			\begin{block}{Left}
+				Peace
+			\end{block}
+		\end{column}
+	\begin{column}{.2\textwidth}
+		\begin{block}{Right}
+			prevails
+		\end{block}
+	\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{index.jpeg}	
+	\end{figure}
+	
+	\end{column}
+	\begin{column}{.2\textwidth}
+	Im just a field
+\end{column}
+	\end{columns}
+\end{frame}
+\end{document}
+

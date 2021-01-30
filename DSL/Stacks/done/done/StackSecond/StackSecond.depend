@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1565416533 source:c:\secondyr\stacksecond\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
